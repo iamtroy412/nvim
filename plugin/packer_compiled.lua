@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/troy/.local/share/nvim/site/pack/packer/start/rose-pine",
     url = "https://github.com/rose-pine/neovim"
   },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/Users/troy/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/troy/.local/share/nvim/site/pack/packer/start/telescope.nvim",

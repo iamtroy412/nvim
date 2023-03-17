@@ -16,3 +16,15 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- yank to system keyboard with leader
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+-- easy window navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- double tap 'j' to escape insert mode
+vim.keymap.set("i", "jj", "<ESC>")
+
+-- why do we ever want a semicolon in normal mode?
+vim.keymap.set("n", ";", ":")
