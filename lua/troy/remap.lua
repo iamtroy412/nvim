@@ -1,4 +1,7 @@
+-- Make 'space' the new leader key
 vim.g.mapleader = " "
+
+-- map 'space'pv to the file browser
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- Move up/down while in visual mode
