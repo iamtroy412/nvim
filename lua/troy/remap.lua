@@ -11,6 +11,9 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- Half page jumping with up/down and keep cursor in the middle
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+-- Same thing for next/prev search
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 -- next greatest remap ever : asbjornHaland
 -- yank to system keyboard with leader
