@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd.packadd('packer.vim')
+-- vim.cmd.packadd('packer.vim')
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
@@ -16,13 +16,10 @@ return require('packer').startup(function(use)
   use({
       'rose-pine/neovim',
       as = 'rose-pine',
-      config = function()
-          require('rose-pine').setup({
-              disable_background = true,
-          })
-          vim.cmd('colorscheme rose-pine')
-      end
   })
+
+  use {'rebelot/kanagawa.nvim'}
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('nvim-treesitter/playground')
